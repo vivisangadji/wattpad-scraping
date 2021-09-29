@@ -1,0 +1,60 @@
+{{#if detailstory}}
+<div class="container p-3 my-3 bg-light">
+	<div class="row p-3 justify-content-center">
+		<div class="col-12 col-lg-4">
+			<img src="{{detailstory.cover}}">
+			<a href="{{detailstory.author.link}}" style="color:black;text-decoration:none">
+				<div class="row shadow mt-3 p-2 g-0 align-items-center rounded-3">
+					<div class="col-2 text-center">
+						<img src="{{detailstory.author.ava}}" class="w-75 rounded-circle">
+					</div>
+					<div class="col-8 text-center">
+						<h4>Author</h4>
+						<h5 class="card-title text-secondary">{{detailstory.author.username}}</h5>
+					</div>
+					<div class="col-2 text-center">
+						<i class="bi bi-chevron-double-right"></i>
+					</div>
+				</div>
+			</a>
+			<a href="{{detailstory.author.link}}" style="color:black;text-decoration:none">
+				<div class="row shadow mt-3 p-2 g-0 align-items-center rounded-3">
+					<div class="col-2 text-center">
+						<img src="{{detailstory.author.ava}}" class="w-75 rounded-circle">
+					</div>
+					<div class="col-8 text-center">
+						<h4>Author</h4>
+						<h5 class="card-title text-secondary">{{detailstory.author.username}}</h5>
+					</div>
+					<div class="col-2 text-center">
+						<i class="bi bi-chevron-double-right"></i>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="col-12 col-lg-6 p-3">
+			<h2 class="card-title">{{detailstory.title}}</h2>
+			<p class="card-text">
+	        	<span class="text-muted me-2"><i class="bi bi-eye-fill"></i> {{detailstory.status.reads}}</span>
+	        	<small class="text-muted me-2"><i class="bi bi-star"></i> {{detailstory.status.votes}}</small>
+	        	<small class="text-muted me-2"><i class="bi bi-list-stars"></i> {{detailstory.status.parts}}</small>
+	        	<small class="text-muted me-2"><i class="bi bi-book"></i> {{detailstory.status.time}}</small>
+
+			</p>
+			<p class="text-muted">{{detailstory.description}}</p>
+		</div>
+	</div>
+		<!-- <div class="col-8 col-md-5 ms-auto">
+			<div class="card">
+			    <div class="card-header bg-warning">
+			      Chapter List
+			    </div>
+			    <div class="list-group" style="max-height: 90vh; overflow:scroll;">
+					{{#each detailstory.chapter}}
+					  <a href="{{link}}" class="list-group-item">{{title}}</a>
+					{{/each}}
+				</div>
+			</div> -->
+
+</div>
+{{/if}}

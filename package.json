@@ -1,0 +1,22 @@
+{
+  "name": "wattpad-scraping",
+  "version": "1.0.0",
+  "description": "wattpad web scraping ",
+  "main": "scraping.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vivi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap-icons": "^1.5.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "pretty": "^2.0.0",
+    "request": "^2.88.2"
+  }
+}
